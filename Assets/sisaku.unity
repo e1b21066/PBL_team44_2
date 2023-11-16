@@ -915,6 +915,7 @@ GameObject:
   - component: {fileID: 442608150}
   - component: {fileID: 442608152}
   - component: {fileID: 442608153}
+  - component: {fileID: 442608154}
   m_Layer: 14
   m_Name: movieseat
   m_TagString: Untagged
@@ -1026,14 +1027,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 442608139}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: 0.99052185, z: -0, w: -0.13735546}
   m_LocalPosition: {x: 33.695, y: 12.35, z: 59.339}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 32
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 195.79, z: 0}
 --- !u!114 &442608146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1099,6 +1100,16 @@ MonoBehaviour:
   - target: 0
     specifiedTargetItem: {fileID: 0}
     key: Ride
+    type: 0
+    value:
+      boolValue: 0
+      floatValue: 0
+      integerValue: 0
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+  - target: 4
+    specifiedTargetItem: {fileID: 0}
+    key: RideG
     type: 0
     value:
       boolValue: 0
@@ -1187,7 +1198,7 @@ MonoBehaviour:
   triggers:
   - target: 0
     specifiedTargetItem: {fileID: 0}
-    key: Getoff
+    key: TGetoff
     type: 0
     value:
       boolValue: 0
@@ -1195,6 +1206,22 @@ MonoBehaviour:
       integerValue: 0
       vector2Value: {x: 0, y: 0}
       vector3Value: {x: 0, y: 0, z: 0}
+--- !u!114 &442608154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 442608139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12b024015fda4e59ba68848672190618, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ridableItem: {fileID: 442608140}
+  key:
+    target: 0
+    key: TGetoff
 --- !u!1 &485628807
 GameObject:
   m_ObjectHideFlags: 0
@@ -2402,6 +2429,8 @@ GameObject:
   - component: {fileID: 1630030112}
   - component: {fileID: 1630030111}
   - component: {fileID: 1630030114}
+  - component: {fileID: 1630030116}
+  - component: {fileID: 1630030115}
   m_Layer: 14
   m_Name: Screen
   m_TagString: Untagged
@@ -2515,14 +2544,50 @@ VideoPlayer:
   - 1
   m_Url: 
   m_EnabledAudioTracks: 01
-  m_DirectAudioMutes: 00
+  m_DirectAudioMutes: 01
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_SkipOnDrop: 0
   m_Looping: 1
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
+--- !u!114 &1630030115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1630030109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cb255369b6847549bcfa8e664daa4b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playableDirector: {fileID: 1630030116}
+  globalGimmickKey:
+    key:
+      target: 2
+      key: RideG
+    item: {fileID: 0}
+--- !u!320 &1630030116
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1630030109}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: ba9e6ad87319a5e488b4e14c67fe6644, type: 2}
+  m_InitialState: 0
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References:
+    - 7f644464a4113c74b8edddcc5f36bc05: {fileID: 1630030114}
 --- !u!1 &1718635456
 GameObject:
   m_ObjectHideFlags: 0
