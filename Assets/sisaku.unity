@@ -953,7 +953,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id:
-    value: 0
+    value: 10571335780993177079
   itemName: 
   size: {x: 0, y: 0, z: 0}
 --- !u!65 &442608142
@@ -1051,7 +1051,7 @@ MonoBehaviour:
     target: 0
     key: Ride
   targetTransform: {fileID: 1630030110}
-  positionOnly: 1
+  positionOnly: 0
 --- !u!114 &442608147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2217,7 +2217,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1263003938}
   - component: {fileID: 1263003939}
-  - component: {fileID: 1263003940}
   m_Layer: 14
   m_Name: Movie_System
   m_TagString: Untagged
@@ -2257,25 +2256,6 @@ MonoBehaviour:
     value: 2033318290033295564
   itemName: 
   size: {x: 0, y: 0, z: 0}
---- !u!1818360608 &1263003940
-PositionConstraint:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1263003937}
-  m_Enabled: 1
-  m_Weight: 0
-  m_TranslationAtRest: {x: 22.795868, y: 8.797894, z: 55.976}
-  m_TranslationOffset: {x: 22.795868, y: 8.797894, z: 55.976}
-  m_AffectTranslationX: 1
-  m_AffectTranslationY: 1
-  m_AffectTranslationZ: 1
-  m_IsContraintActive: 1
-  m_IsLocked: 1
-  m_Sources:
-  - sourceTransform: {fileID: 0}
-    weight: 1
 --- !u!1 &1346227658
 GameObject:
   m_ObjectHideFlags: 0
@@ -2422,7 +2402,6 @@ GameObject:
   - component: {fileID: 1630030112}
   - component: {fileID: 1630030111}
   - component: {fileID: 1630030114}
-  - component: {fileID: 1630030118}
   m_Layer: 14
   m_Name: Screen
   m_TagString: Untagged
@@ -2544,22 +2523,6 @@ VideoPlayer:
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
---- !u!114 &1630030118
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1630030109}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3977a5e65e72f4db4b85ddba10d48dd4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id:
-    value: 0
-  itemName: 
-  size: {x: 0, y: 0, z: 0}
 --- !u!1 &1718635456
 GameObject:
   m_ObjectHideFlags: 0
