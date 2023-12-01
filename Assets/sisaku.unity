@@ -782,6 +782,159 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &675770343 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 6586035de812dc44f95cf2b3f6ff97e5, type: 3}
+  m_PrefabInstance: {fileID: 1793927874}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &675770344 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 6586035de812dc44f95cf2b3f6ff97e5, type: 3}
+  m_PrefabInstance: {fileID: 1793927874}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &675770345 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6586035de812dc44f95cf2b3f6ff97e5, type: 3}
+  m_PrefabInstance: {fileID: 1793927874}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &675770346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 675770343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e67bdc2960f9462385a7fba1c0052836, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  globalGimmickKey:
+    key:
+      target: 2
+      key: GetOffSwing
+    item: {fileID: 0}
+  logic:
+    statements:
+    - singleStatement:
+        targetState:
+          target: 2
+          key: isSwing
+          parameterType: 1
+        expression:
+          type: 1
+          value:
+            type: 0
+            constant:
+              type: 1
+              boolValue: 0
+              floatValue: 0
+              integerValue: 0
+              vector2Value: {x: 0, y: 0}
+              vector3Value: {x: 0, y: 0, z: 0}
+            sourceState:
+              target: 2
+              key: 
+              type: 6
+          operatorExpression:
+            operator: 0
+            operands:
+            - type: 0
+              value:
+                type: 1
+                constant:
+                  type: 1
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 0
+                  vector2Value: {x: 0, y: 0}
+                  vector3Value: {x: 0, y: 0, z: 0}
+                sourceState:
+                  target: 2
+                  key: isSwing
+                  type: 1
+              operatorExpression:
+                operator: 0
+                operands: []
+--- !u!114 &675770347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 675770343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e67bdc2960f9462385a7fba1c0052836, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  globalGimmickKey:
+    key:
+      target: 2
+      key: GetOnSwing
+    item: {fileID: 0}
+  logic:
+    statements:
+    - singleStatement:
+        targetState:
+          target: 2
+          key: isSwing
+          parameterType: 1
+        expression:
+          type: 1
+          value:
+            type: 0
+            constant:
+              type: 1
+              boolValue: 0
+              floatValue: 0
+              integerValue: 0
+              vector2Value: {x: 0, y: 0}
+              vector3Value: {x: 0, y: 0, z: 0}
+            sourceState:
+              target: 2
+              key: 
+              type: 6
+          operatorExpression:
+            operator: 0
+            operands:
+            - type: 0
+              value:
+                type: 1
+                constant:
+                  type: 1
+                  boolValue: 0
+                  floatValue: 0
+                  integerValue: 0
+                  vector2Value: {x: 0, y: 0}
+                  vector3Value: {x: 0, y: 0, z: 0}
+                sourceState:
+                  target: 2
+                  key: isSwing
+                  type: 6
+              operatorExpression:
+                operator: 0
+                operands: []
+--- !u!114 &675770348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 675770343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 133ae1ad08034b85a0a2611463ae4964, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 675770344}
+  globalGimmickKey:
+    key:
+      target: 2
+      key: isSwing
+    item: {fileID: 0}
+  parameterType: 1
+  animatorParameterName: isSwing
 --- !u!1001 &714915973
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -958,6 +1111,75 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 6.31, z: 0}
+--- !u!1001 &853432324
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 675770345}
+    m_Modifications:
+    - target: {fileID: 3916163714632923539, guid: 3633e8828f8b60a4abf8006d75d30955, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3916163714632923539, guid: 3633e8828f8b60a4abf8006d75d30955, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6423129
+      objectReference: {fileID: 0}
+    - target: {fileID: 3916163714632923539, guid: 3633e8828f8b60a4abf8006d75d30955, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.12022783
+      objectReference: {fileID: 0}
+    - target: {fileID: 3916163714632923539, guid: 3633e8828f8b60a4abf8006d75d30955, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.0072212
+      objectReference: {fileID: 0}
+    - target: {fileID: 3916163714632923539, guid: 3633e8828f8b60a4abf8006d75d30955, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.7010002
+      objectReference: {fileID: 0}
+    - target: {fileID: 3916163714632923539, guid: 3633e8828f8b60a4abf8006d75d30955, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.057826996
+      objectReference: {fileID: 0}
+    - target: {fileID: 3916163714632923539, guid: 3633e8828f8b60a4abf8006d75d30955, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6142989
+      objectReference: {fileID: 0}
+    - target: {fileID: 3916163714632923539, guid: 3633e8828f8b60a4abf8006d75d30955, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.35019538
+      objectReference: {fileID: 0}
+    - target: {fileID: 3916163714632923539, guid: 3633e8828f8b60a4abf8006d75d30955, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.614299
+      objectReference: {fileID: 0}
+    - target: {fileID: 3916163714632923539, guid: 3633e8828f8b60a4abf8006d75d30955, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.35019562
+      objectReference: {fileID: 0}
+    - target: {fileID: 3916163714632923539, guid: 3633e8828f8b60a4abf8006d75d30955, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 59.373
+      objectReference: {fileID: 0}
+    - target: {fileID: 3916163714632923539, guid: 3633e8828f8b60a4abf8006d75d30955, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3916163714632923539, guid: 3633e8828f8b60a4abf8006d75d30955, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3916163714632923548, guid: 3633e8828f8b60a4abf8006d75d30955, type: 3}
+      propertyPath: m_Sources.Array.data[0].sourceTransform
+      value: 
+      objectReference: {fileID: 1334706201}
+    - target: {fileID: 3916163714632923564, guid: 3633e8828f8b60a4abf8006d75d30955, type: 3}
+      propertyPath: m_Name
+      value: seat_swing
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3633e8828f8b60a4abf8006d75d30955, type: 3}
 --- !u!1 &861730714
 GameObject:
   m_ObjectHideFlags: 0
@@ -1635,6 +1857,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1334706201 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6095214199238766560, guid: 6586035de812dc44f95cf2b3f6ff97e5, type: 3}
+  m_PrefabInstance: {fileID: 1793927874}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1346227658
 GameObject:
   m_ObjectHideFlags: 0
@@ -1804,7 +2031,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6586035de812dc44f95cf2b3f6ff97e5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.622158
+      value: 8.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6586035de812dc44f95cf2b3f6ff97e5, type: 3}
       propertyPath: m_LocalPosition.z
